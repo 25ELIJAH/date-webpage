@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom right, #ff0000, #000000); /* Initial gradient */
+    color: white;
+    transition: background 0.5s ease;
+}
+
+h1, h2 {
+    color: #fff;
+    animation: fadeIn 1s ease;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#date-selection, #calendar, #confirmation-message, #no-message {
+    display: none;
+}
+
+#date-selection {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8), rgba(255, 165, 0, 0.8));
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#no-message {
+    background: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+}
+
+.crying-emoji {
+    width: 100px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}

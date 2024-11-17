@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Date Proposal</title>
+</head>
+<body>
+    <div id="initial-page">
+        <h1>Will you go on a date with me? ❤️ or ❌</h1>
+        <button id="yes-button">Yes 💚</button>
+        <button id="no-button">No ❤️</button>
+    </div>
+
+    <div id="date-selection" style="display: none;">
+        <h2>Select an Activity</h2>
+        <ul>
+            <li><button onclick="showCalendar('Nature Walk')">Nature Walk</button></li>
+            <li><button onclick="showCalendar('Visiting Children\'s Home')">Visiting Children's Home</button></li>
+            <li><button onclick="showCalendar('Holiday')">Holiday</button></li>
+            <li><button onclick="showCalendar('Watching Sunset')">Watching Sunset</button></li>
+            <li><button onclick="showCalendar('Going to Events Together')">Going to Events Together</button></li>
+        </ul>
+    </div>
+
+    <div id="calendar" style="display: none;">
+        <h2>Please Choose Your Preferred Date</h2>
+        <input type="date" id="date-picker" />
+        <button id="confirm-date" onclick="confirmDate()">Confirm Date</button>
+    </div>
+
+    <div id="confirmation-message" style="display: none;">
+        <h2>Thank you so much! I love you! ❤️</h2>
+    </div>
+
+    <div id="no-message" style="display: none;">
+        <h2>Oh no! 😢</h2>
+        <p>I won't give up on you!</p>
+        <img src="https://example.com/crying-emoji.gif" alt="Crying Emoji" class="crying-emoji" /> <!-- Replace with your crying emoji URL -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
